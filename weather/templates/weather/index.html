@@ -81,7 +81,7 @@ function onMapClick(e) {
     lat = e.latlng.lat
     lng = e.latlng.lng
     $.ajax({
-      type: "GET",
+      type: "POST",
       url:"{% url 'get_weather' %}",
       data:{
         lat:lat,
